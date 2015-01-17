@@ -1,4 +1,6 @@
-    var robot = new Image();
+/*SWAG*/
+
+var robot = new Image();
 robot.src = "http://nichwch.github.io/nickbot.png";
 var canvas = document.getElementById("canvas");
 function sprite (options) {
