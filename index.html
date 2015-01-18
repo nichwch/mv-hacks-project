@@ -4,35 +4,50 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="js/bootstrap.js"></script>
 </head>
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4" id="answer">
-        <canvas id="canvas"></canvas>
+      <div id="answer">
+        <img id="player" src="goodnickbot.png" class="hover">
+
+        </img>
+        <img id="laser" src="laser.png">
+
+      </img>
+      <img id="explosion" src="explosion.png">
+
+    </img>
+        <img id="enemy" src="nickbot.png" class="hover">
+
+      </img>
       </div>
-      <div class="col-md-4" id="display">
-        <div class="btn-group-vertical" role="group" aria-label="...">
+        <div class="btn-group-vertical" role="group" aria-label="..."  id="display">
           <p id="prompt">yey prompt</p>
           <button type="button" class="btn btn-default" id="button1">shit</button>
           <button type="button" class="btn btn-default" id="button2">game</button>
           <button type="button" class="btn btn-default" id="button3">is</button>
           <button type="button" class="btn btn-default" id="button4">broken</button>
+          <button type="button" class="btn btn-default" id="contbutton">continue</button>
         </div>
-        <button type="button" class="btn btn-default" id="contbutton">continue</button
-        </div>
-      </div>
+
     </div>
-    <div id="popup">
-      <p id="popupmessage">
-        you're stupid
-      </p>
-      >
-    </div>
-    <script src="questions.js"></script>
-    <script src="game.js"></script>
-  </body>
-  </html>
-  
+  </div>
+  <div id="popup">
+    <p id="popupmessage">
+      you're stupid
+    </p>
+    >
+  </div>
+  <script src="questions.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

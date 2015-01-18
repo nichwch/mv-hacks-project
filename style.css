@@ -1,24 +1,103 @@
+body
+{
+  background-color:grey;
+}
+
 p,h1{
   text-align:center;
 }
 #answer,#display
 {
   border-radius:25px;
-  background-color:grey;
-  margin:5%;
 }
 #answer
 {
-  padding:5%;
+  background-color:white;
+  margin-left:10%;
+  margin-right:10%;
+  height:50%;
+  padding-top:5%;
 }
 #display
 {
-  padding:10%
-}
-#canvas
-{
   background-color:white;
-  width:90%;
-  height:90%;
+  margin-left:25%;
+  margin-right:25%;
+  margin-top:2.5%;
+  width:50%;
+  padding:1%;
+}
+#player,#enemy
+{
+  width:20%;
+  height:auto;
+}
+#player
+{
+  margin-left:10% !important;
+}
+#enemy
+{
+  margin-left:30% !important;
+}
 
+#laser,#explosion
+{
+  z-index: 9001;
+  position:absolute;
+  visibility:hidden;
+  width:50px;
+}
+
+/* Hover effects courtesy of Hover.css*/
+@-webkit-keyframes hover {
+  50% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-12px);
+  }
+}
+/*
+.hover {
+display: inline-block;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+*/
+.hover{
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
